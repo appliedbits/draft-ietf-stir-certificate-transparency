@@ -17,7 +17,7 @@
 /versioned/
 Gemfile.lock
 archive.json
-draft-wendt-stir-certificate-transparency.xml
+draft-ietf-stir-certificate-transparency.xml
 package-lock.json
 report.xml
 !requirements.txt
@@ -30,3 +30,11 @@ draft-wendt-stir-certificate-transparency-04.*
 draft-wendt-stir-certificate-transparency-05.*
 draft-wendt-stir-certificate-transparency-06.*
 draft-wendt-stir-certificate-transparency-07.*
+draft-ietf-stir-certificate-transparency-00.*
+draft-ietf-stir-certificate-transparency-01.*
+draft-ietf-stir-certificate-transparency-02.*
+draft-ietf-stir-certificate-transparency-03.*
+draft-ietf-stir-certificate-transparency-04.*
+draft-ietf-stir-certificate-transparency-05.*
+draft-ietf-stir-certificate-transparency-06.*
+draft-ietf-stir-certificate-transparency-07.*
