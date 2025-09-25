@@ -3,7 +3,7 @@ title: "STI Certificate Transparency"
 abbrev: "STI CT"
 category: std
 
-docname: draft-wendt-stir-certificate-transparency-latest
+docname: draft-ietf-stir-certificate-transparency-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -20,8 +20,8 @@ venue:
   type: "Working Group"
   mail: "stir@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/stir/"
-  github: "appliedbits/draft-wendt-stir-certificate-transparency"
-  latest: "https://appliedbits.github.io/draft-wendt-stir-certificate-transparency/draft-wendt-stir-certificate-transparency.html"
+  github: "appliedbits/draft-ietf-stir-certificate-transparency"
+  latest: "https://appliedbits.github.io/draft-ietf-stir-certificate-transparency/draft-ietf-stir-certificate-transparency.html"
 
 author:
  -
