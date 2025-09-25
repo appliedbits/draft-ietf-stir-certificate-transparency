@@ -182,7 +182,7 @@ Logs must produce an STH within the Maximum Merge Delay (MMD) to confirm that al
 
 # STI-CT APIs
 
-STI-CT re-uses the REST endpoints defined in Section 4 of {{RFC6962}} (the “/ct/v1/” namespace) with no semantic changes.  For operational clarity it is RECOMMENDED deployments expose them under a path `/stict/v1/` but the request/response formats are compatible with {{RFC6962}}.
+STI-CT re-uses the REST endpoints defined in Section 4 of {{RFC6962}} (the "/ct/v1/" namespace) with no semantic changes.  For operational clarity it is RECOMMENDED deployments expose them under a path `/stict/v1/` but the request/response formats are compatible with {{RFC6962}}.
 
 # Clients
 
@@ -200,12 +200,12 @@ Because the SCT is delivered in-band with the Certificate, neither the AS nor th
 
 ### Authentication Service Processing
 
-1. Optional local SCT validation – For each embedded SCT the AS MAY:
+1. Optional local SCT validation - For each embedded SCT the AS MAY:
    - compute the hash of the TBSCertificate as defined in Section 3.2 of {{RFC6962}} and verify the SCT signature with the cached public key of the issuing CT log;
    - verify that now() >= SCT.timestamp advertised by that log.
    - Implementations SHOULD pre-compute and cache these checks at certificate activation time so that per-call signing incurs only an O(1) lookup.
-2. PASSporT construction – The PASSporT header and payload are produced per {{RFC8224}} using the Certificate’s private key; the Certificate (with its SCT list) is conveyed in the 'x5u' or 'x5c' parameter.
-3. Optional Failure handling – If no SCT validates, the AS MAY treat the Certificate as unusable and refuse to sign the call.
+2. PASSporT construction - The PASSporT header and payload are produced per {{RFC8224}} using the Certificate’s private key; the Certificate (with its SCT list) is conveyed in the 'x5u' or 'x5c' parameter.
+3. Optional Failure handling - If no SCT validates, the AS MAY treat the Certificate as unusable and refuse to sign the call.
 
 ### Verification Service Processing
 
