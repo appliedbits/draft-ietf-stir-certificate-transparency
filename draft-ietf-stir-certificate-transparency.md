@@ -3,7 +3,7 @@ title: "STI Certificate Transparency"
 abbrev: "STI CT"
 category: std
 
-docname: draft-ietf-stir-certificate-transparency-latest
+docname: draft-ietf-stir-certificate-transparency-01
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -30,7 +30,7 @@ author:
     email: chris@appliedbits.com
     country: US
  -
-    fullname: Rob Sliwa
+    fullname: Rob &#x015A;liwa
     organization: Somos, Inc.
     email: robjsliwa@gmail.com
     country: US
@@ -283,7 +283,17 @@ The main differences are:
 
 # Security Considerations
 
-TODO Security
+As this specification follows the guidance of {{RFC6962}}, it also inherits the security considerations defined therein.
+
+The use of Certificate Transparency (CT) within the STIR ecosystem enhances accountability but also introduces operational and security risks that must be managed. Trust in the system depends on the integrity of CT logs and therefore, logs should be operated by reputable entities and monitored to detect mis-issuance or inconsistent Signed Tree Heads (STHs). 
+
+Signed Certificate Timestamps (SCTs) should be verified by Authentication Services (AS) before use for creating digital signatures and by Verification Services (VS) using trusted log public keys to prevent forgery or replay. Key rotation and distribution should be performed securely.
+
+While CT does not prevent mis-issuance, it enables timely detection and monitors should track Telephone Number (TN) and Service Provider Code (SPC) associations and alert stakeholders if certificates are issued outside of authorized ranges. 
+
+Because transparency may expose sensitive relationships between TNs and entities, implementers should consider privacy implications and minimize or redact logged data where appropriate. 
+
+CT logs and Certification Authorities (CAs) should implement safeguards such as rate limiting, caching, and redundant storage to mitigate denial-of-service risks and ensure availability.
 
 # IANA Considerations {#IANA}
 
